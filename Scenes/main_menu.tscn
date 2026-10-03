@@ -1,0 +1,205 @@
+[gd_scene format=3 uid="uid://dasjhnkf3ws5n"]
+
+[ext_resource type="Shader" uid="uid://vijr1fdi3fay" path="res://Scripts/main menu.gdshader" id="1_1ehe0"]
+[ext_resource type="Texture2D" uid="uid://c6jacvpvnfwla" path="res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg" id="2_ce3w2"]
+[ext_resource type="Texture2D" uid="uid://dfddwfwop7s5q" path="res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.png" id="3_n45e2"]
+[ext_resource type="FontFile" uid="uid://cu1l0pr11ejgu" path="res://Assets/UI/Pixel Game.otf" id="4_ce3w2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5kuey"]
+shader = ExtResource("1_1ehe0")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ralei"]
+atlas = ExtResource("3_n45e2")
+region = Rect2(115.85437, 1158.5612, 1191.9097, 913.0399)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b6uar"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oamur"]
+bg_color = Color(0.3, 0.22080001, 0.102, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ehe0"]
+bg_color = Color(0.13, 0.12765999, 0.11829999, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n45e2"]
+bg_color = Color(0.34, 0.33388, 0.3094, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 6
+shadow_offset = Vector2(6, 6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opfnp"]
+bg_color = Color(0.21, 0.21, 0.19109999, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 5
+shadow_offset = Vector2(5, 5)
+
+[node name="main menu" type="Control" unique_id=939659235]
+layout_mode = 3
+anchor_right = 0.99600005
+anchor_bottom = 1.0
+offset_right = -0.39208984
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=514569807]
+z_index = -6
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_5kuey")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 8.0720215
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ce3w2")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2051783792]
+z_index = -6
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 19.072021
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=884797519]
+z_index = -5
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 298.0
+offset_top = 30.0
+offset_right = -317.92798
+offset_bottom = -77.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_ralei")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Main panel" type="Panel" parent="." unique_id=1958552803]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.279
+anchor_top = 0.31500003
+anchor_right = 0.70100003
+anchor_bottom = 0.68700004
+offset_left = 0.5720825
+offset_top = 0.5399475
+offset_right = -73.534424
+offset_bottom = -36.889954
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1, 1.1)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_b6uar")
+
+[node name="Game Title" type="Label" parent="Main panel" unique_id=2049496936]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.036000002
+anchor_top = -0.216
+anchor_right = 0.97300005
+offset_left = -0.014532089
+offset_top = -0.07420349
+offset_right = -0.2163086
+offset_bottom = 15.454544
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.83, 0.77964664, 0.6142, 1)
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_oamur")
+text = "Magic-Adventure"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="Main panel" unique_id=808733689]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 35.455658
+offset_bottom = 133.63748
+grow_horizontal = 2
+theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
+theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
+text = "PLAY"
+
+[node name="OptionsButton" type="Button" parent="Main panel" unique_id=1333229468]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 145.45477
+offset_bottom = -120.3634
+theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
+theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
+text = "OPTIONS"
+
+[node name="ExitButton" type="Button" parent="Main panel" unique_id=1738397752]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 255.45468
+offset_bottom = -10.363495
+grow_horizontal = 2
+theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
+theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
+text = "EXIT"
