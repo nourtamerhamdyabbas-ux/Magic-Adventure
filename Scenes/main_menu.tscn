@@ -60,6 +60,235 @@ corner_radius_bottom_left = 8
 shadow_size = 5
 shadow_offset = Vector2(5, 5)
 
+[sub_resource type="Animation" id="Animation_ce3w2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dark start:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Main panel/Game Title:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Main panel/Game Title:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(26.363647, -115.454575)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Main panel/PlayButton:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 133.63745)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Main panel/PlayButton:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Main panel/OptionsButton:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 239.09113)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Main panel/ExitButton:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 343.6366)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Main panel/OptionsButton:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Main panel/ExitButton:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_n45e2"]
+resource_name = "main menu"
+length = 2.5000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dark start:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Main panel/Game Title:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Main panel/Game Title:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(26.363647, -115.454575), Vector2(26.363647, -79.09093)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Main panel/PlayButton:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 133.63745), Vector2(0, 35.455658)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Main panel/PlayButton:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Main panel/OptionsButton:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 239.09113), Vector2(0, 145.45477)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Main panel/ExitButton:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 343.6366), Vector2(0, 255.45468)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Main panel/OptionsButton:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Main panel/ExitButton:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_opfnp"]
+_data = {
+&"RESET": SubResource("Animation_ce3w2"),
+&"main menu": SubResource("Animation_n45e2")
+}
+
 [node name="main menu" type="Control" unique_id=939659235]
 layout_mode = 3
 anchor_right = 0.99600005
@@ -68,6 +297,17 @@ offset_right = -0.39208984
 offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Dark start" type="ColorRect" parent="." unique_id=10498900]
+visible = false
+z_index = 30
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=514569807]
 z_index = -6
@@ -133,6 +373,7 @@ scale = Vector2(1.1, 1.1)
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b6uar")
 
 [node name="Game Title" type="Label" parent="Main panel" unique_id=2049496936]
+modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
@@ -140,25 +381,26 @@ anchor_left = 0.036000002
 anchor_top = -0.216
 anchor_right = 0.97300005
 offset_left = -0.014532089
-offset_top = -0.07420349
+offset_top = -36.43785
 offset_right = -0.2163086
-offset_bottom = 15.454544
+offset_bottom = -20.909103
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.83, 0.77964664, 0.6142, 1)
 theme_override_fonts/font = ExtResource("4_ce3w2")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_oamur")
-text = "Magic-Adventure"
+text = "Magic Adventure"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="PlayButton" type="Button" parent="Main panel" unique_id=808733689]
+modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 35.455658
-offset_bottom = 133.63748
+offset_top = 133.63745
+offset_bottom = 231.81804
 grow_horizontal = 2
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
@@ -170,13 +412,14 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
 text = "PLAY"
 
 [node name="OptionsButton" type="Button" parent="Main panel" unique_id=1333229468]
+modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 145.45477
-offset_bottom = -120.3634
+offset_top = 239.09113
+offset_bottom = -26.727386
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
 theme_override_fonts/font = ExtResource("4_ce3w2")
@@ -187,13 +430,14 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
 text = "OPTIONS"
 
 [node name="ExitButton" type="Button" parent="Main panel" unique_id=1738397752]
+modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 255.45468
-offset_bottom = -10.363495
+offset_top = 343.6366
+offset_bottom = 77.81842
 grow_horizontal = 2
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
@@ -203,3 +447,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
 text = "EXIT"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1310653246]
+libraries/ = SubResource("AnimationLibrary_opfnp")
+autoplay = &"main menu"
