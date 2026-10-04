@@ -1,3 +1,13 @@
+CanvasLayer
+Button
+Label
+VBoxContainer
+NinePatchRect
+ColorRect
+Control
+TextureRect
+HBoxContainer
+TextureProgressBar
 CollisionShape2D
 Area2D
 AnimatedSprite2D

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ciip2teexyrax"]
 
-[ext_resource type="Script" uid="uid://dkolbgh1gxu4s" path="res://Scripts/magic_frog.gd" id="1_xjgdf"]
+[ext_resource type="Script" uid="uid://qvw6smobleos" path="res://Scenes/main_character.gd" id="1_esnnb"]
 [ext_resource type="Texture2D" uid="uid://bqwj3h2hl1a0i" path="res://Assets/Main Character/Attack_1.png" id="2_esnnb"]
 [ext_resource type="Texture2D" uid="uid://c14xjxpsqdu14" path="res://Assets/Main Character/Attack_2.png" id="3_2o0tg"]
 [ext_resource type="Texture2D" uid="uid://bor76e7jg1bx8" path="res://Assets/Main Character/Attack_3.png" id="4_umvch"]
@@ -403,7 +403,7 @@ height = 64.0
 size = Vector2(20, 56)
 
 [node name="MainCharacter" type="CharacterBody2D" unique_id=920746686]
-script = ExtResource("1_xjgdf")
+script = ExtResource("1_esnnb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1880124408]
 sprite_frames = SubResource("SpriteFrames_t76eq")
@@ -416,9 +416,11 @@ frame_progress = 1.0
 position = Vector2(-6, 33)
 shape = SubResource("CapsuleShape2D_m0ht2")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1164080835]
+[node name="Hitbox" type="Area2D" parent="." unique_id=1164080835]
 position = Vector2(40, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1543940143]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1543940143]
 position = Vector2(3, 0)
 shape = SubResource("RectangleShape2D_t76eq")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

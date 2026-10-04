@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://ymwlsm3l8nu4"]
+
+[ext_resource type="Texture2D" uid="uid://b15cau6q5to7v" path="res://Assets/UI/32x32-Tilesheet.png" id="1_u4a2s"]
+[ext_resource type="Texture2D" uid="uid://bar0c6c7xuu03" path="res://Assets/UI/HUD/TileSheet.png" id="2_2qe5m"]
+[ext_resource type="FontFile" uid="uid://bfuu20wl4dhl5" path="res://Assets/UI/BlackgothRegular-xRg40.otf" id="3_ao4gj"]
+[ext_resource type="Texture2D" uid="uid://dk02nwwx3bd3j" path="res://Assets/Pickups/pickup.png" id="4_ai2e2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t76eq"]
+atlas = ExtResource("1_u4a2s")
+region = Rect2(197, 135, 86, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esyny"]
+atlas = ExtResource("1_u4a2s")
+region = Rect2(295, 176, 82, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0ht2"]
+atlas = ExtResource("2_2qe5m")
+region = Rect2(130, 66, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1idy"]
+atlas = ExtResource("4_ai2e2")
+region = Rect2(1, 1, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imobx"]
+atlas = ExtResource("1_u4a2s")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t76eq"]
+content_margin_top = 8.0
+texture = ExtResource("1_u4a2s")
+region_rect = Rect2(63, 104, 65, 19)
+modulate_color = Color(0.9157694, 0.9157693, 0.9157694, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_esyny"]
+content_margin_top = 8.0
+texture = ExtResource("1_u4a2s")
+region_rect = Rect2(63, 104, 65, 19)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m0ht2"]
+content_margin_top = 8.0
+texture = ExtResource("1_u4a2s")
+region_rect = Rect2(63, 104, 65, 19)
+modulate_color = Color(0.69799274, 0.69799274, 0.69799274, 1)
+
+[node name="Level_UI" type="CanvasLayer" unique_id=167183391]
+
+[node name="HUD" type="Control" parent="." unique_id=1239168081]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD" unique_id=1975019227]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 10.0
+offset_right = 136.0
+offset_bottom = 98.0
+scale = Vector2(3, 3)
+theme_override_constants/separation = 8
+
+[node name="HealthBar" type="TextureProgressBar" parent="HUD/VBoxContainer" unique_id=819354349]
+layout_mode = 2
+value = 100.0
+texture_under = SubResource("AtlasTexture_t76eq")
+texture_progress = SubResource("AtlasTexture_esyny")
+texture_progress_offset = Vector2(2, 9)
+
+[node name="ZombiesTracker" type="HBoxContainer" parent="HUD/VBoxContainer" unique_id=1731193543]
+layout_mode = 2
+
+[node name="ZombiesIcon" type="TextureRect" parent="HUD/VBoxContainer/ZombiesTracker" unique_id=1139065425]
+layout_mode = 2
+texture = SubResource("AtlasTexture_m0ht2")
+stretch_mode = 4
+
+[node name="ZombiesLabel" type="Label" parent="HUD/VBoxContainer/ZombiesTracker" unique_id=2018952571]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ao4gj")
+theme_override_font_sizes/font_size = 24
+
+[node name="CoinsTracker" type="HBoxContainer" parent="HUD/VBoxContainer" unique_id=1977590306]
+layout_mode = 2
+
+[node name="CoinsIcon" type="TextureRect" parent="HUD/VBoxContainer/CoinsTracker" unique_id=969191182]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+texture = SubResource("AtlasTexture_g1idy")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="CoinsLabel" type="Label" parent="HUD/VBoxContainer/CoinsTracker" unique_id=974291534]
+layout_mode = 2
+
+[node name="PauseMenu" type="Control" parent="." unique_id=1084631305]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="PauseMenu" unique_id=1954229030]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.23529412)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PauseMenu" unique_id=1247527422]
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -300.0
+offset_right = 300.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_imobx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/NinePatchRect" unique_id=1952779403]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 53.0
+offset_right = 596.0
+offset_bottom = 292.0
+
+[node name="Title" type="Label" parent="PauseMenu/NinePatchRect/VBoxContainer" unique_id=1826990528]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ao4gj")
+theme_override_font_sizes/font_size = 84
+text = "MAGIC ADVENTURE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="PauseMenu/NinePatchRect/VBoxContainer" unique_id=1744611918]
+custom_minimum_size = Vector2(500, 130)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_t76eq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_esyny")
+theme_override_styles/hover = SubResource("StyleBoxTexture_m0ht2")
+
+[node name="MainMenuButton" type="Button" parent="PauseMenu/NinePatchRect/VBoxContainer" unique_id=213288144]
+layout_mode = 2
+
+[node name="LevelComplete" type="Control" parent="." unique_id=882894552]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
