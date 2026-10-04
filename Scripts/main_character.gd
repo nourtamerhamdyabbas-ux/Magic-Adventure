@@ -63,7 +63,7 @@ func update_facing_direction(direction: float):
 	
 	if is_facing_left:
 		animated_sprite_2d.position.x = -12.5
-		$Hitbox.position.x = -abs($Hitbox.position.x)
+		$Hitbox.position.x = -abs($Hitbox.position.x) 
 	else:
 		animated_sprite_2d.position.x = 0
 		$Hitbox.position.x = abs($Hitbox.position.x)
