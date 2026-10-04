@@ -287,7 +287,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_4xl3q")
 }],
 "loop": 0,
-"name": &"hit",
+"name": &"hurt",
 "speed": 6.0
 }, {
 "frames": [{
@@ -397,20 +397,18 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0ht2"]
 radius = 11.0
-height = 64.0
+height = 62.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t76eq"]
 size = Vector2(48, 60)
 
-[node name="MainCharacter" type="CharacterBody2D" unique_id=920746686]
+[node name="MainCharacter" type="CharacterBody2D" unique_id=920746686 groups=["Player"]]
 script = ExtResource("1_esnnb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1880124408]
 sprite_frames = SubResource("SpriteFrames_t76eq")
-animation = &"attack_3"
+animation = &"hurt"
 autoplay = "idle"
-frame = 3
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1136245717]
 position = Vector2(-6, 33)
@@ -424,3 +422,4 @@ position = Vector2(-11, 2)
 shape = SubResource("RectangleShape2D_t76eq")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

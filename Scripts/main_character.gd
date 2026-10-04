@@ -11,9 +11,9 @@ const JUMP_VELOCITY = -480.0
 var is_attacking = false
 var can_attack = true
 var is_hurt = false
-var max_hp = 100
-var current_hp = 100
-
+var max_health = 10
+var current_health = 10
+signal health_changed(new_health) 
 func _input(event):
 	if is_hurt:
 		return
@@ -89,15 +89,14 @@ func attack(attack_anim: String):
 func take_damage(amount):
 	if is_hurt:
 		return
-	current_hp -= amount
-
-	
+	current_health -= amount
+	current_health = clamp(current_health, 0, max_health)
+	health_changed.emit(current_health)
 	if is_attacking:
 		is_attacking = false
 		can_attack = true
 		$Hitbox.set_deferred("monitoring", false)
-	
-	if current_hp > 0:
+	if current_health > 0:
 		is_hurt = true
 		animated_sprite_2d.play("hurt")
 		await animated_sprite_2d.animation_finished
@@ -116,3 +115,8 @@ func _on_animated_sprite_2d_animation_finished():
 		is_attacking = false
 		can_attack = true
 		$Hitbox.monitoring = false
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	if not is_attacking:
+		return
+	if body.is_in_group("Enemy") and body.has_method("take_damage"):
+		body.take_damage(1)

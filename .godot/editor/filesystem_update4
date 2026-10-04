@@ -1,6 +1,4 @@
-res://Scenes/levels.tscn
-res://Scripts/level_ui.gd
-res://Scenes/main_character.tscn
-res://Scenes/trial_scene.tscn
 res://Scripts/main_character.gd
-res://Scenes/zombie_1.tscn
+res://Scenes/trial_scene.tscn
+res://Scripts/levels.gd
+res://Scripts/main_menu.gd

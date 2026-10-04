@@ -15,6 +15,7 @@ extends CanvasLayer
 var current_coins: int = 0
 var current_zombies: int = 0
 
+
 func _ready():
 	current_level.text = "Level " + str(current_level_number)
 	if player:
@@ -31,7 +32,7 @@ func add_coin(amount: int = 1):
 	update_coins_ui()
 	check_level_completion()
 
-func add_monster_kill(amount: int = 1):
+func add_zombie_kill(amount: int = 1):
 	current_zombies += amount
 	update_zombies_ui()
 	check_level_completion()
