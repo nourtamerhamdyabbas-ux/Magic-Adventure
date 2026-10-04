@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dasjhnkf3ws5n"]
 
 [ext_resource type="Shader" uid="uid://vijr1fdi3fay" path="res://Scripts/main menu.gdshader" id="1_1ehe0"]
+[ext_resource type="Script" uid="uid://d3o7xnlicop22" path="res://Scripts/main_menu.gd" id="1_n45e2"]
 [ext_resource type="Texture2D" uid="uid://c6jacvpvnfwla" path="res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg" id="2_ce3w2"]
 [ext_resource type="Texture2D" uid="uid://dfddwfwop7s5q" path="res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.png" id="3_n45e2"]
 [ext_resource type="FontFile" uid="uid://cu1l0pr11ejgu" path="res://Assets/UI/Pixel Game.otf" id="4_ce3w2"]
@@ -59,6 +60,45 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 shadow_size = 5
 shadow_offset = Vector2(5, 5)
+
+[sub_resource type="Animation" id="Animation_opfnp"]
+resource_name = "QuitPopup"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("QuitPopup:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(640, 717), Vector2(640, 390)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("QuitPopup:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("QuitDarkOverLay:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.78431374)]
+}
 
 [sub_resource type="Animation" id="Animation_ce3w2"]
 length = 0.001
@@ -165,6 +205,54 @@ tracks/8/path = NodePath("Main panel/ExitButton:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("TextureRect2:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("QuitPopup:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 717)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("QuitPopup:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("QuitDarkOverLay:color")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -282,12 +370,36 @@ tracks/8/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("TextureRect2:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_opfnp"]
 _data = {
+&"QuitPopup": SubResource("Animation_opfnp"),
 &"RESET": SubResource("Animation_ce3w2"),
 &"main menu": SubResource("Animation_n45e2")
 }
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_al4r6"]
+bg_color = Color(0.11, 0.11, 0.11, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [node name="main menu" type="Control" unique_id=939659235]
 layout_mode = 3
@@ -297,6 +409,7 @@ offset_right = -0.39208984
 offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_n45e2")
 
 [node name="Dark start" type="ColorRect" parent="." unique_id=10498900]
 visible = false
@@ -339,6 +452,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.5882353)
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=884797519]
+modulate = Color(1, 1, 1, 0)
 z_index = -5
 texture_filter = 1
 layout_mode = 1
@@ -451,3 +565,105 @@ text = "EXIT"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1310653246]
 libraries/ = SubResource("AnimationLibrary_opfnp")
 autoplay = &"main menu"
+
+[node name="QuitDarkOverLay" type="ColorRect" parent="." unique_id=74614224]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="QuitPopup" type="Panel" parent="." unique_id=884671214]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 40
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.36
+anchor_right = 0.651
+anchor_bottom = 0.82800007
+offset_left = -0.49591064
+offset_top = 326.75998
+offset_right = 0.33483887
+offset_bottom = 171.45111
+theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
+
+[node name="Title" type="Label" parent="QuitPopup" unique_id=1403299443]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 22.0
+offset_bottom = 84.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 60
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle" type="Label" parent="QuitPopup/Title" unique_id=1659753148]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 78.0
+offset_bottom = 140.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 60
+text = "DO YOU WANT TO EXIT ?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="YesButton" type="Button" parent="QuitPopup" unique_id=597240922]
+z_index = 40
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 41.0
+offset_top = 207.00317
+offset_right = -322.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
+theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
+text = "YES"
+
+[node name="NoButton" type="Button" parent="QuitPopup" unique_id=1567342289]
+z_index = 40
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 318.0
+offset_top = 207.00317
+offset_right = -45.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
+theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
+text = "NO"
+
+[connection signal="pressed" from="Main panel/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Main panel/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="QuitPopup/YesButton" to="." method="_on_yes_button_pressed"]
+[connection signal="pressed" from="QuitPopup/NoButton" to="." method="_on_no_button_pressed"]
