@@ -1,6 +1,14 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791114229
+::res://::1791137680
 README.md::TextFile::-1::1791063328::0::1::::<><><>0<>0<><>::
+::res://addons/::1791117146
+::res://addons/godot_super-wakatime/::1791117146
+api_key_prompt.tscn::PackedScene::3919262858641749045::1791117146::0::1::::<><><>0<>0<><>::
+counter.tscn::PackedScene::6849360014225833986::1791117146::0::1::::<><><>0<>0<><>::
+godot_super-wakatime.gd::GDScript::6277149880384411866::1791117146::0::1::::<>EditorPlugin<><>0<>1<><>::
+plugin.cfg::TextFile::-1::1791117146::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1791117146::0::1::::<><><>0<>0<><>::
+utils.gd::GDScript::5251015809120159908::1791117146::0::1::::<>RefCounted<><>0<>0<><>::
 ::res://Assets/::1791071020
 ::res://Assets/background/::1791071147
 background_layer_1.png::CompressedTexture2D::2361531583708851300::1791070818::1791071147::1::::<><><>0<>0<>b73bb798de724448a9f36a910ed5a5ab<>res://.godot/imported/background_layer_1.png-b970e8b38126176d9335afe0da118827.ctex::
@@ -64,9 +72,9 @@ info.txt::TextFile::-1::1789673200::0::1::::<><><>0<>0<><>::
 ::res://Assets/UI/HUD/::1791071147
 Base-01.png::CompressedTexture2D::8973689809358069842::1789485771::1791071146::1::::<><><>0<>0<>dd9ca82f55e6a8174a672e0108a812ea<>res://.godot/imported/Base-01.png-3e4eb462d9118424c067228e12c0d363.ctex::
 TileSheet.png::CompressedTexture2D::2423038234718031310::1789672930::1791071147::1::::<><><>0<>0<>261963eaf501daa1cd03677f0d043360<>res://.godot/imported/TileSheet.png-12e1742ae93ce4520ab3513beded1a4a.ctex::
-::res://Scenes/::1791074608
-level_ui.tscn::PackedScene::1710661163181470513::1791074598::0::1::::<><><>0<>0<><>::uid://b15cau6q5to7v::::res://Assets/UI/32x32-Tilesheet.png<>uid://bar0c6c7xuu03::::res://Assets/UI/HUD/TileSheet.png<>uid://bfuu20wl4dhl5::::res://Assets/UI/BlackgothRegular-xRg40.otf<>uid://dk02nwwx3bd3j::::res://Assets/Pickups/pickup.png
+::res://Scenes/::1791121687
+level_ui.tscn::PackedScene::1710661163181470513::1791121687::0::1::::<><><>0<>0<><>::uid://b15cau6q5to7v::::res://Assets/UI/32x32-Tilesheet.png<>uid://bar0c6c7xuu03::::res://Assets/UI/HUD/TileSheet.png<>uid://bfuu20wl4dhl5::::res://Assets/UI/BlackgothRegular-xRg40.otf<>uid://dk02nwwx3bd3j::::res://Assets/Pickups/pickup.png
 main_character.gd::GDScript::1167765529091512742::1791073971::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 main_character.tscn::PackedScene::5351827114186179339::1791073978::0::1::::<><><>0<>0<><>::uid://qvw6smobleos::::res://Scenes/main_character.gd<>uid://bqwj3h2hl1a0i::::res://Assets/Main Character/Attack_1.png<>uid://c14xjxpsqdu14::::res://Assets/Main Character/Attack_2.png<>uid://bor76e7jg1bx8::::res://Assets/Main Character/Attack_3.png<>uid://cf2w2udk817rl::::res://Assets/Main Character/Dead.png<>uid://doghwc1k3h05::::res://Assets/Main Character/Hurt.png<>uid://dlmdaxhc0bi2x::::res://Assets/Main Character/Idle_2.png<>uid://jbqvmm8nivhl::::res://Assets/Main Character/Jump.png<>uid://bnygi0aylfcps::::res://Assets/Main Character/Run.png<>uid://bd3puahajfdav::::res://Assets/Main Character/Walk.png
-main_menu.tscn::PackedScene::5020882622473284279::1791074608::0::1::::<><><>0<>0<><>::res://Scripts/main menu.gdshader<>res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg<>res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.png<>res://Assets/UI/Pixel Game.otf
+main_menu.tscn::PackedScene::5020882622473284279::1791114256::0::1::::<><><>0<>0<><>::
 ::res://Scripts/::1791070952

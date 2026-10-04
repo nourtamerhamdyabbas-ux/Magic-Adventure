@@ -1,9 +1,9 @@
-CanvasLayer
 Button
 Label
 VBoxContainer
 NinePatchRect
 ColorRect
+CanvasLayer
 Control
 TextureRect
 HBoxContainer
