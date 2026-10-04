@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://c8o38g8f5mmr1"]
+
+[ext_resource type="Shader" uid="uid://dh8mb4x2ypugm" path="res://Scenes/credits.gdshader" id="1_gryuy"]
+[ext_resource type="Texture2D" uid="uid://c6jacvpvnfwla" path="res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg" id="2_ccovl"]
+[ext_resource type="FontFile" uid="uid://cu1l0pr11ejgu" path="res://Assets/UI/Pixel Game.otf" id="3_ccovl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_al4r6"]
+shader = ExtResource("1_gryuy")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_al4r6"]
+bg_color = Color(0.6, 0.414, 0.228, 0.29411766)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oamur"]
+bg_color = Color(0.3, 0.22080001, 0.102, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="CREDITS" type="Control" unique_id=425984480]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1067971660]
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_al4r6")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ccovl")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=556780184]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="Panel" type="Panel" parent="." unique_id=1224507609]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1785.609
+offset_top = 131.24094
+offset_right = 345.51538
+offset_bottom = 616.6057
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5701828
+theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1506800854]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 95.74884
+offset_top = 1646.6685
+offset_right = 248.84247
+offset_bottom = 1838.6685
+grow_horizontal = 2
+rotation = -1.5678955
+theme_override_colors/font_color = Color(0.83, 0.77964664, 0.6142, 1)
+theme_override_fonts/font = ExtResource("3_ccovl")
+theme_override_font_sizes/font_size = 60
+text = "LEVELS (GAME'S CORE):
+ALI YAHIA
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel" unique_id=1249167938]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 88.465454
+offset_top = 478.66345
+offset_right = 88.465454
+offset_bottom = 670.66345
+grow_horizontal = 2
+rotation = -1.5689261
+theme_override_colors/font_color = Color(0.83, 0.77964664, 0.6142, 1)
+theme_override_fonts/font = ExtResource("3_ccovl")
+theme_override_font_sizes/font_size = 60
+text = "GAME'S UI:
+NOUR TAMER
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel" unique_id=369950215]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 100.0733
+offset_top = 1117.6709
+offset_right = 295.16693
+offset_bottom = 1244.6709
+grow_horizontal = 2
+rotation = -1.5746143
+theme_override_colors/font_color = Color(0.83, 0.77964664, 0.6142, 1)
+theme_override_fonts/font = ExtResource("3_ccovl")
+theme_override_font_sizes/font_size = 60
+text = "GAME'S IDEA:
+ALI YAHIA & NOUR TAMER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel" unique_id=1840584044]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 123.03903
+offset_top = 1249.8324
+offset_right = 1070.0391
+offset_bottom = -232.53235
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.5721236
+theme_override_colors/font_color = Color(0.83, 0.77964664, 0.6142, 1)
+theme_override_fonts/font = ExtResource("3_ccovl")
+theme_override_font_sizes/font_size = 60
+text = "THANKS FOR EVERY ONE SUPPORTED THIS GAME"
+
+[node name="Label" type="Label" parent="." unique_id=437038932]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 710.0
+offset_top = 18.0
+offset_right = -642.0
+offset_bottom = 99.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.83, 0.77964664, 0.6142, 1)
+theme_override_fonts/font = ExtResource("3_ccovl")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_oamur")
+text = "CREDITS"
+horizontal_alignment = 1
+vertical_alignment = 1

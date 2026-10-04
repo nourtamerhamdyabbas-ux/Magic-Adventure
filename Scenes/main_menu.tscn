@@ -258,6 +258,30 @@ tracks/12/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
 }
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Main panel/CreditsButton:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 343.6366)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Main panel/CreditsButton:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_n45e2"]
 resource_name = "main menu"
@@ -308,7 +332,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 1.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 133.63745), Vector2(0, 35.455658)]
+"values": [Vector2(0, 133.63745), Vector2(89.091034, 26.363651)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -329,10 +353,10 @@ tracks/5/path = NodePath("Main panel/OptionsButton:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 1.8),
+"times": PackedFloat32Array(0, 1.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 239.09113), Vector2(0, 145.45477)]
+"values": [Vector2(0, 239.09113), Vector2(89.09082, 114.54526)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -341,10 +365,10 @@ tracks/6/path = NodePath("Main panel/ExitButton:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 1.7333333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 343.6366), Vector2(0, 255.45468)]
+"values": [Vector2(0, 343.6366), Vector2(89.09088, 204.54575)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -353,7 +377,7 @@ tracks/7/path = NodePath("Main panel/OptionsButton:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 1.8),
+"times": PackedFloat32Array(0, 1.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -365,7 +389,7 @@ tracks/8/path = NodePath("Main panel/ExitButton:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 1.7666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -378,6 +402,30 @@ tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Main panel/CreditsButton:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 343.6366), Vector2(89.09082, 296.36392)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Main panel/CreditsButton:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -514,7 +562,8 @@ layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 offset_top = 133.63745
-offset_bottom = 231.81804
+offset_right = -171.81824
+offset_bottom = 202.72794
 grow_horizontal = 2
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
@@ -533,7 +582,8 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 239.09113
-offset_bottom = -26.727386
+offset_right = -171.81824
+offset_bottom = -57.6373
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
 theme_override_fonts/font = ExtResource("4_ce3w2")
@@ -551,7 +601,8 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 343.6366
-offset_bottom = 77.81842
+offset_right = -171.81824
+offset_bottom = 46.90918
 grow_horizontal = 2
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
@@ -561,6 +612,21 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
 text = "EXIT"
+
+[node name="CreditsButton" type="Button" parent="Main panel" unique_id=1313367679]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_top = 343.6366
+offset_right = 560.90894
+offset_bottom = 412.72632
+theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
+theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_fonts/font = ExtResource("4_ce3w2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
+text = "CREDITS"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1310653246]
 libraries/ = SubResource("AnimationLibrary_opfnp")
@@ -664,6 +730,8 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
 text = "NO"
 
 [connection signal="pressed" from="Main panel/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Main panel/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="Main panel/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Main panel/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="QuitPopup/YesButton" to="." method="_on_yes_button_pressed"]
 [connection signal="pressed" from="QuitPopup/NoButton" to="." method="_on_no_button_pressed"]
