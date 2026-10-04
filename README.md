@@ -1,5 +1,5 @@
-# MAGIC-Adventure V.0.1
-- MAGIC-Adventure is a 2D platformer game with 3 levels. Complete all the objectives to win each level!
+# MAGIC-ADVENTURE V.0.1
+- MAGIC-ADVENTURE is a 2D platformer game with 3 levels. Complete all the objectives to win each level!
 - The primary challenge is to attack the enemies with punch to kill them and collect all the coins.
 # IMPORTANT NOTE
 - This is the first version of the game, it has some incomplete sections (e.g., levels), however there is still only 1 or 2 levels left.
