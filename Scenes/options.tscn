@@ -387,6 +387,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.5882353)
 
 [node name="Panel" type="Panel" parent="." unique_id=942782650]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -401,6 +402,7 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="Panel" unique_id=243546824]
 modulate = Color(1, 1, 1, 0)
 z_index = 1
+texture_filter = 1
 layout_mode = 0
 offset_left = 221.0
 offset_top = 56.0
@@ -417,6 +419,7 @@ vertical_alignment = 1
 [node name="Label2" type="Label" parent="Panel" unique_id=1571287097]
 modulate = Color(1, 1, 1, 0)
 z_index = 1
+texture_filter = 1
 layout_mode = 0
 offset_left = 95.0
 offset_top = 246.0
@@ -533,6 +536,20 @@ offset_top = 437.0
 offset_right = 1396.0
 offset_bottom = 441.0
 color = Color(1, 0.55200005, 0.04000002, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1995312761]
+texture_filter = 1
+layout_mode = 0
+offset_left = 829.0
+offset_top = -4.0
+offset_right = 1153.0
+offset_bottom = 117.0
+theme_override_colors/font_color = Color(0.97400004, 1, 0.48000002, 1)
+theme_override_fonts/font = ExtResource("4_kftxf")
+theme_override_font_sizes/font_size = 70
+text = "OPTIONS"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="value_changed" from="Panel/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="toggled" from="Panel/CheckButton" to="." method="_on_check_button_toggled"]
