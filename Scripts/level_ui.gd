@@ -7,7 +7,7 @@ extends CanvasLayer
 @onready var pause_menu: Control = $PauseMenu
 @onready var level_complete: Control = $LevelComplete
 
-@export var player: Player
+@export var player: player
 @export var required_coins: int = 10
 @export var required_zombies: int = 10
 @export var current_level_number: int = 1

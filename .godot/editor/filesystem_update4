@@ -1,3 +1,2 @@
-res://Scenes/level_ui.tscn
+res://Scenes/levels.tscn
 res://Scripts/level_ui.gd
-res://Scenes/main_character.tscn
