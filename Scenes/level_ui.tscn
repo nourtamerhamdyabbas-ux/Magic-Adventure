@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ymwlsm3l8nu4"]
 
+[ext_resource type="Script" uid="uid://bb52corxv1742" path="res://Scripts/level_ui.gd" id="1_2qe5m"]
 [ext_resource type="Texture2D" uid="uid://b15cau6q5to7v" path="res://Assets/UI/32x32-Tilesheet.png" id="1_u4a2s"]
 [ext_resource type="Texture2D" uid="uid://bar0c6c7xuu03" path="res://Assets/UI/HUD/TileSheet.png" id="2_2qe5m"]
 [ext_resource type="FontFile" uid="uid://bfuu20wl4dhl5" path="res://Assets/UI/BlackgothRegular-xRg40.otf" id="3_ao4gj"]
@@ -79,6 +80,7 @@ region_rect = Rect2(63, 104, 65, 19)
 modulate_color = Color(0.7411765, 0.7411765, 0.7411765, 1)
 
 [node name="Level_UI" type="CanvasLayer" unique_id=167183391]
+script = ExtResource("1_2qe5m")
 
 [node name="HUD" type="Control" parent="." unique_id=1239168081]
 layout_mode = 3
@@ -112,6 +114,7 @@ stretch_mode = 4
 
 [node name="ZombiesLabel" type="Label" parent="HUD/VBoxContainer/ZombiesTracker" unique_id=2018952571]
 layout_mode = 2
+theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("3_ao4gj")
 theme_override_font_sizes/font_size = 24
 
@@ -127,9 +130,18 @@ stretch_mode = 4
 
 [node name="CoinsLabel" type="Label" parent="HUD/VBoxContainer/CoinsTracker" unique_id=974291534]
 layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_ao4gj")
+theme_override_font_sizes/font_size = 24
+
+[node name="CurrentLevel" type="Label" parent="HUD/VBoxContainer" unique_id=990711992]
+layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_ao4gj")
+theme_override_font_sizes/font_size = 28
 
 [node name="PauseMenu" type="Control" parent="." unique_id=1084631305]
-visible = false
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -206,6 +218,8 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_m0ht2")
 text = "MAIN MENU"
 
 [node name="LevelComplete" type="Control" parent="." unique_id=882894552]
+process_mode = 3
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -284,3 +298,8 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_bami8")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_4vga4")
 theme_override_styles/hover = SubResource("StyleBoxTexture_84ld3")
 text = "MAIN MENU"
+
+[connection signal="pressed" from="PauseMenu/NinePatchRect/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PauseMenu/NinePatchRect/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="LevelComplete/NinePatchRect/VBoxContainer/NextLevelButton" to="." method="_on_next_level_button_pressed"]
+[connection signal="pressed" from="LevelComplete/NinePatchRect/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

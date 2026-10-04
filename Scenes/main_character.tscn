@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ciip2teexyrax"]
 
-[ext_resource type="Script" uid="uid://qvw6smobleos" path="res://Scenes/main_character.gd" id="1_esnnb"]
+[ext_resource type="Script" uid="uid://dh0ilrdamal2b" path="res://Scenes/main_character.gd" id="1_esnnb"]
 [ext_resource type="Texture2D" uid="uid://bqwj3h2hl1a0i" path="res://Assets/Main Character/Attack_1.png" id="2_esnnb"]
 [ext_resource type="Texture2D" uid="uid://c14xjxpsqdu14" path="res://Assets/Main Character/Attack_2.png" id="3_2o0tg"]
 [ext_resource type="Texture2D" uid="uid://bor76e7jg1bx8" path="res://Assets/Main Character/Attack_3.png" id="4_umvch"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://jbqvmm8nivhl" path="res://Assets/Main Character/Jump.png" id="8_hajwg"]
 [ext_resource type="Texture2D" uid="uid://bnygi0aylfcps" path="res://Assets/Main Character/Run.png" id="9_7eqbn"]
 [ext_resource type="Texture2D" uid="uid://bd3puahajfdav" path="res://Assets/Main Character/Walk.png" id="10_olw23"]
+[ext_resource type="PackedScene" uid="uid://ymwlsm3l8nu4" path="res://Scenes/level_ui.tscn" id="11_2o0tg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pqtas"]
 atlas = ExtResource("2_esnnb")
@@ -422,5 +423,7 @@ position = Vector2(40, 31)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1543940143]
 position = Vector2(3, 0)
 shape = SubResource("RectangleShape2D_t76eq")
+
+[node name="Level_UI" parent="." unique_id=167183391 instance=ExtResource("11_2o0tg")]
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
