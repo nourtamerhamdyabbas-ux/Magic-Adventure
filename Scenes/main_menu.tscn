@@ -308,7 +308,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 1.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 133.63745), Vector2(0, 35.455658)]
+"values": [Vector2(0, 133.63745), Vector2(89.091034, 26.363651)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -329,10 +329,10 @@ tracks/5/path = NodePath("Main panel/OptionsButton:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 1.8),
+"times": PackedFloat32Array(0, 1.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 239.09113), Vector2(0, 145.45477)]
+"values": [Vector2(0, 239.09113), Vector2(89.09082, 114.54526)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -341,10 +341,10 @@ tracks/6/path = NodePath("Main panel/ExitButton:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 1.7333333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 343.6366), Vector2(0, 255.45468)]
+"values": [Vector2(0, 343.6366), Vector2(89.09088, 204.54575)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -353,7 +353,7 @@ tracks/7/path = NodePath("Main panel/OptionsButton:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 1.8),
+"times": PackedFloat32Array(0, 1.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -365,7 +365,7 @@ tracks/8/path = NodePath("Main panel/ExitButton:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 1.7666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -514,7 +514,8 @@ layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 offset_top = 133.63745
-offset_bottom = 231.81804
+offset_right = -171.81824
+offset_bottom = 202.7276
 grow_horizontal = 2
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
@@ -533,7 +534,8 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 239.09113
-offset_bottom = -26.727386
+offset_right = -171.81824
+offset_bottom = -57.6373
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
 theme_override_fonts/font = ExtResource("4_ce3w2")
@@ -551,7 +553,8 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 343.6366
-offset_bottom = 77.81842
+offset_right = -171.81824
+offset_bottom = 46.908813
 grow_horizontal = 2
 theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
 theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
@@ -664,6 +667,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
 text = "NO"
 
 [connection signal="pressed" from="Main panel/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Main panel/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="Main panel/ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="QuitPopup/YesButton" to="." method="_on_yes_button_pressed"]
 [connection signal="pressed" from="QuitPopup/NoButton" to="." method="_on_no_button_pressed"]
