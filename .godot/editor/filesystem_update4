@@ -1,0 +1,4 @@
+res://Scripts/main_character.gd
+res://Scenes/trial_scene.tscn
+res://Scripts/levels.gd
+res://Scripts/main_menu.gd

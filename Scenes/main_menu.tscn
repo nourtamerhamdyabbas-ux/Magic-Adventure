@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dasjhnkf3ws5n"]
+[gd_scene format=3 uid="uid://cdsfg563iih56"]
 
 [ext_resource type="Shader" uid="uid://vijr1fdi3fay" path="res://Scripts/main menu.gdshader" id="1_1ehe0"]
 [ext_resource type="Script" uid="uid://d3o7xnlicop22" path="res://Scripts/main_menu.gd" id="1_n45e2"]
