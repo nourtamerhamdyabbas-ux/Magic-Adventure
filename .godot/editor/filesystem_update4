@@ -2,3 +2,8 @@ res://Scripts/main_character.gd
 res://Scenes/trial_scene.tscn
 res://Scripts/levels.gd
 res://Scripts/main_menu.gd
+res://Scenes/coin.tscn
+res://Scripts/coin.gd
+res://Scenes/level_ui.tscn
+res://Scenes/level_1.tscn
+res://Scenes/levels.tscn
