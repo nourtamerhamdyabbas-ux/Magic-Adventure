@@ -875,6 +875,7 @@ text = "BACK"
 [connection signal="pressed" from="ButtonsNode/Level2Button" to="." method="_on_level_2_button_pressed"]
 [connection signal="pressed" from="ButtonsNode/Level3Button" to="." method="_on_level_3_button_pressed"]
 [connection signal="pressed" from="ButtonsNode/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Level1Popup/Enter1Button" to="." method="_on_enter_1_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Level1Popup/Back1Button" to="." method="_on_back_1_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Level2Popup/Back2Button" to="." method="_on_back_2_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Level3Popup/Back3Button" to="." method="_on_back_3_button_pressed"]

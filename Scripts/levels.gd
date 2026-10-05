@@ -88,3 +88,7 @@ func _on_back_3_button_pressed() -> void:
 	$ButtonsNode/Level1Button.disabled = false
 	$ButtonsNode/Level2Button.disabled = false
 	$ButtonsNode/Level3Button.disabled = false
+
+
+func _on_enter_1_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/level_1.tscn")

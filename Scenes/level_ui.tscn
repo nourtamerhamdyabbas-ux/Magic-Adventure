@@ -79,7 +79,7 @@ texture = ExtResource("1_u4a2s")
 region_rect = Rect2(63, 104, 65, 19)
 modulate_color = Color(0.7411765, 0.7411765, 0.7411765, 1)
 
-[node name="Level_UI" type="CanvasLayer" unique_id=167183391]
+[node name="Level_UI" type="CanvasLayer" unique_id=167183391 groups=["UI"]]
 script = ExtResource("1_2qe5m")
 
 [node name="HUD" type="Control" parent="." unique_id=1239168081]
