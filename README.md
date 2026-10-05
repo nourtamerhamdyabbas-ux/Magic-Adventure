@@ -2,7 +2,7 @@
 - MAGIC-ADVENTURE is a 2D platformer game with 3 levels. Complete all the objectives to win each level!
 - The primary challenge is to attack the enemies with punch to kill them and collect all the coins.
 # IMPORTANT NOTE
-- This is the first version of the game, it has some incomplete sections (e.g., levels), however there is still only 1 or 2 levels left.
+- This is the first version of the game, it has some incomplete sections (e.g., levels), however there is still only 2 levels left.
 ## How To Run The Game?
 - To run the game you should open the itch.io link, then click the button "Run Game". So simple.
 ## How To Play The Game?
