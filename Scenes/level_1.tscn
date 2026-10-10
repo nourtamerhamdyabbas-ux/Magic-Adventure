@@ -1119,3 +1119,4 @@ position = Vector2(335, 783)
 
 [node name="Level_UI" parent="." unique_id=167183391 node_paths=PackedStringArray("player") instance=ExtResource("8_oovug")]
 player = NodePath("../MainCharacter")
+next_level_path = "uid://b7ej6iewuuige"
