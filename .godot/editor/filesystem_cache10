@@ -1,5 +1,6 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791156883
+::res://::1791628734
+export_presets.cfg::TextFile::-1::1791163510::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::7910238539993849830::1791145875::1791147018::1::::<><><>0<>0<>2e2067d54b1a9887692d47e16ff51020<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1791156883::0::1::::<><><>0<>0<><>::
 ::res://addons/::1791117146
@@ -86,6 +87,10 @@ icons collection .png::CompressedTexture2D::7283226476222615882::1791145874::179
 icons collection .svg::CompressedTexture2D::8428721224544165973::1791145874::1791147011::1::::<><><>0<>0<>1149a3f2312083ae8d7e163ed89f6e21<>res://.godot/imported/icons collection .svg-c5b037be57928daec81004c2858ee9ff.ctex::
 Untitled-3-01.jpg::CompressedTexture2D::4471218445794177679::1791145874::1791147011::1::::<><><>0<>0<>4f4e7de7a306bb5d7b6e4abb42bc2a1c<>res://.godot/imported/Untitled-3-01.jpg-3a613bec4dcea2b8c6d34befa88fa810.ctex::
 Untitled-4-01.jpg::CompressedTexture2D::7662376004081796675::1791145874::1791147011::1::::<><><>0<>0<>1ad9cb41024619ccf2feeff2c1c8fbed<>res://.godot/imported/Untitled-4-01.jpg-a7b4991b03e59b0398603e31e9090029.ctex::
+::res://export/::1791164013
+index.apple-touch-icon.png::CompressedTexture2D::228982932299408944::1791163512::1791164013::1::::<><><>0<>0<>7ba4223f76b5c972f01aa7bf6cd2404d<>res://.godot/imported/index.apple-touch-icon.png-2786902287ee3c081d87ddba9fd253fe.ctex::
+index.icon.png::CompressedTexture2D::5060119218566479722::1791163512::1791164013::1::::<><><>0<>0<>a8b125883e8c840f248ea0843f4ea918<>res://.godot/imported/index.icon.png-3b121a4922cb9cfa20e3529a349a6f72.ctex::
+index.png::CompressedTexture2D::8051627040801245678::1791163512::1791164013::1::::<><><>0<>0<>53ff266a8bb41a3f42bb0845cd88bcda<>res://.godot/imported/index.png-de14850a4c2320eaddca8799ea52db2b.ctex::
 ::res://Godot_Super-Wakatime-master/::1791145874
 ::res://Godot_Super-Wakatime-master/addons/::1791145874
 ::res://Godot_Super-Wakatime-master/addons/godot_super-wakatime/::1791145874
@@ -95,26 +100,27 @@ godot_super-wakatime.gd::GDScript::6277149880384411866::1791145874::0::1::::<>Ed
 plugin.cfg::TextFile::-1::1791145874::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1791145874::0::1::::<><><>0<>0<><>::
 utils.gd::GDScript::5251015809120159908::1791145874::0::1::::<>RefCounted<><>0<>0<><>::
-::res://Scenes/::1791156895
+::res://Scenes/::1791163394
 audio_stream_player.tscn::PackedScene::8909715796397175284::1791156895::0::1::::<><><>0<>0<><>::
+coin.tscn::PackedScene::3598457424340217142::1791157939::0::1::::<><><>0<>0<><>::uid://yqvo5wochp86::::res://Scripts/coin.gd<>uid://dk02nwwx3bd3j::::res://Assets/Pickups/pickup.png<>uid://q7h8vthn8m4e::::res://Assets/Pickups/pickup_sfx.mp3
 credits.gdshader::Shader::7719440372103702080::1791156883::0::1::::<><><>0<>0<><>::
 credits.tscn::PackedScene::7119733869380830124::1791156895::0::1::::<><><>0<>0<><>::
-levels.tscn::PackedScene::7073692509932998355::1791156883::0::1::::<><><>0<>0<><>::uid://d1msymb1lp5pk::::res://Scripts/levels.gd<>uid://dsogk6cwxmpy6::::res://Scripts/levels.gdshader<>uid://c6jacvpvnfwla::::res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg<>uid://cu1l0pr11ejgu::::res://Assets/UI/Pixel Game.otf<>uid://bxdxj37tq2bi3::::res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.jpg<>uid://dfddwfwop7s5q::::res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.png
-level_ui.tscn::PackedScene::1710661163181470513::1791145812::0::1::::<><><>0<>0<><>::uid://bb52corxv1742::::res://Scripts/level_ui.gd<>uid://b15cau6q5to7v::::res://Assets/UI/32x32-Tilesheet.png<>uid://bar0c6c7xuu03::::res://Assets/UI/HUD/TileSheet.png<>uid://bfuu20wl4dhl5::::res://Assets/UI/BlackgothRegular-xRg40.otf<>uid://dk02nwwx3bd3j::::res://Assets/Pickups/pickup.png
+levels.tscn::PackedScene::7073692509932998355::1791161854::0::1::::<><><>0<>0<><>::uid://d1msymb1lp5pk::::res://Scripts/levels.gd<>uid://dsogk6cwxmpy6::::res://Scripts/levels.gdshader<>uid://c6jacvpvnfwla::::res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg<>uid://cu1l0pr11ejgu::::res://Assets/UI/Pixel Game.otf<>uid://bxdxj37tq2bi3::::res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.jpg<>uid://dfddwfwop7s5q::::res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.png
+level_1.tscn::PackedScene::1296695756906364542::1791163394::0::1::::<><><>0<>0<><>::uid://dl6av0t3cary2::::res://Assets/Tileset/tileset.png<>uid://8v7cywufr2qa::::res://Assets/background/background_layer_1.png<>uid://u8lwindxpl36::::res://Assets/background/background_layer_2.png<>uid://b3xxyfe01u2e3::::res://Assets/background/background_layer_3.png<>uid://ciip2teexyrax::::res://Scenes/main_character.tscn<>uid://uapc05q5vgri::::res://Scenes/zombie_1.tscn<>uid://brjeckwfgtj47::::res://Scenes/coin.tscn<>uid://ymwlsm3l8nu4::::res://Scenes/level_ui.tscn
+level_ui.tscn::PackedScene::1710661163181470513::1791158248::0::1::::<><><>0<>0<><>::uid://bb52corxv1742::::res://Scripts/level_ui.gd<>uid://b15cau6q5to7v::::res://Assets/UI/32x32-Tilesheet.png<>uid://bar0c6c7xuu03::::res://Assets/UI/HUD/TileSheet.png<>uid://bfuu20wl4dhl5::::res://Assets/UI/BlackgothRegular-xRg40.otf<>uid://dk02nwwx3bd3j::::res://Assets/Pickups/pickup.png
 main_character.tscn::PackedScene::5351827114186179339::1791156048::0::1::::<><><>0<>0<><>::uid://dh0ilrdamal2b::::res://Scripts/main_character.gd<>uid://bqwj3h2hl1a0i::::res://Assets/Main Character/Attack_1.png<>uid://c14xjxpsqdu14::::res://Assets/Main Character/Attack_2.png<>uid://bor76e7jg1bx8::::res://Assets/Main Character/Attack_3.png<>uid://cf2w2udk817rl::::res://Assets/Main Character/Dead.png<>uid://doghwc1k3h05::::res://Assets/Main Character/Hurt.png<>uid://dlmdaxhc0bi2x::::res://Assets/Main Character/Idle_2.png<>uid://jbqvmm8nivhl::::res://Assets/Main Character/Jump.png<>uid://bnygi0aylfcps::::res://Assets/Main Character/Run.png<>uid://bd3puahajfdav::::res://Assets/Main Character/Walk.png
 main_menu.tscn::PackedScene::5020882622473284279::1791156883::0::1::::<><><>0<>0<><>::uid://vijr1fdi3fay::::res://Scripts/main menu.gdshader<>uid://d3o7xnlicop22::::res://Scripts/main_menu.gd<>uid://c6jacvpvnfwla::::res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg<>uid://dfddwfwop7s5q::::res://Assets/UI/Wooden GUI FREE version/Wooden GUI copy-01.png<>uid://cu1l0pr11ejgu::::res://Assets/UI/Pixel Game.otf
 options.tscn::PackedScene::9159466464858137611::1791156895::0::1::::<><><>0<>0<><>::
-coin.tscn::PackedScene::3598457424340217142::1791157331::0::1::::<><><>0<>0<><>::uid://dk02nwwx3bd3j::::res://Assets/Pickups/pickup.png<>uid://q7h8vthn8m4e::::res://Assets/Pickups/pickup_sfx.mp3
-trial_scene.tscn::PackedScene::5060969595854920707::1791156871::0::1::::<><><>0<>0<><>::uid://ciip2teexyrax::::res://Scenes/main_character.tscn<>uid://dkx1qc35jdivu::::res://icon.svg<>uid://uapc05q5vgri::::res://Scenes/zombie_1.tscn<>uid://ymwlsm3l8nu4::::res://Scenes/level_ui.tscn
+trial_scene.tscn::PackedScene::5060969595854920707::1791158283::0::1::::<><><>0<>0<><>::uid://ciip2teexyrax::::res://Scenes/main_character.tscn<>uid://dkx1qc35jdivu::::res://icon.svg<>uid://uapc05q5vgri::::res://Scenes/zombie_1.tscn<>uid://brjeckwfgtj47::::res://Scenes/coin.tscn<>uid://ymwlsm3l8nu4::::res://Scenes/level_ui.tscn
 zombie_1.tscn::PackedScene::1404692559435730282::1791155921::0::1::::<><><>0<>0<><>::uid://ckuiu1xk76l38::::res://Scripts/zombie_1.gd<>uid://c1lsh56mffdh::::res://Assets/Enemies/Zombie_4/Attack.png<>uid://bd3vk28mt1v2a::::res://Assets/Enemies/Zombie_4/Dead.png<>uid://5c5hnfvmpx7s::::res://Assets/Enemies/Zombie_4/Hurt.png<>uid://mgawdba4xrci::::res://Assets/Enemies/Zombie_4/Idle.png<>uid://dgymxmwf8lbvk::::res://Assets/Enemies/Zombie_4/Walk.png<>uid://b15cau6q5to7v::::res://Assets/UI/32x32-Tilesheet.png
-::res://Scripts/::1791156883
-levels.gd::GDScript::9010080916662027944::1791156883::0::1::::<>Control<><>0<>0<><>::
+::res://Scripts/::1791162848
+coin.gd::GDScript::1718863959665761621::1791157823::0::1::::<>Area2D<><>0<>0<><>::
+levels.gd::GDScript::9010080916662027944::1791161854::0::1::::<>Control<><>0<>0<><>::
 levels.gdshader::Shader::8451946317360638875::1791145875::0::1::::<><><>0<>0<><>::
 level_ui.gd::GDScript::2520184553008145845::1791156505::0::1::::<>CanvasLayer<><>0<>0<><>::
 main menu.gdshader::Shader::1491058923341668780::1791145875::0::1::::<><><>0<>0<><>::
-main_character.gd::GDScript::7702699677619525187::1791156826::0::1::::player<>CharacterBody2D<><>0<>0<><>::
+main_character.gd::GDScript::7702699677619525187::1791162848::0::1::::player<>CharacterBody2D<><>0<>0<><>::
 main_menu.gd::GDScript::9155435678692511293::1791156883::0::1::::<>Control<><>0<>0<><>::
-Options.gdshader::Shader::6338961193199659503::1791156883::0::1::::<><><>0<>0<><>::
-coin.gd::GDScript::1718863959665761621::1791157364::0::1::::<>Area2D<><>0<>0<><>::
 options.gd::GDScript::2994953601709462756::1791156883::0::1::::<>Control<><>0<>0<><>::
+Options.gdshader::Shader::6338961193199659503::1791156883::0::1::::<><><>0<>0<><>::
 zombie_1.gd::GDScript::5516540212303905533::1791155921::0::1::::<>CharacterBody2D<><>0<>0<><>::
