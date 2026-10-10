@@ -2,3 +2,5 @@ res://Scenes/zombie_1.tscn
 res://Scenes/zombie_2.tscn
 res://Scripts/zombie_2.gd
 res://Scenes/trial_scene.tscn
+res://Scenes/zombie_3.tscn
+res://Scripts/zombie_3.gd
