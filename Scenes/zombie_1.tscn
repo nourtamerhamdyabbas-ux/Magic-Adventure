@@ -344,7 +344,7 @@ scale = Vector2(0.8, 0.8)
 value = 100.0
 texture_under = SubResource("AtlasTexture_ij88i")
 texture_progress = SubResource("AtlasTexture_h5cwm")
-texture_progress_offset = Vector2(1, 9)
+texture_progress_offset = Vector2(2, 9)
 
 [node name="DetectionArea" type="Area2D" parent="." unique_id=1481899164]
 position = Vector2(-1, 32)
