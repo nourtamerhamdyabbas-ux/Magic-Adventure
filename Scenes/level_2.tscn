@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bvr2wu6n86cfa" path="res://Scenes/zombie_2.tscn" id="6_055b2"]
 [ext_resource type="PackedScene" uid="uid://brjeckwfgtj47" path="res://Scenes/coin.tscn" id="7_2mgoq"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42uki"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2mgoq"]
 texture = ExtResource("1_cggpd")
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
@@ -982,7 +982,7 @@ physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
-sources/0 = SubResource("TileSetAtlasSource_42uki")
+sources/0 = SubResource("TileSetAtlasSource_2mgoq")
 
 [node name="Level_2" type="Node2D" unique_id=1681040604]
 
@@ -1173,6 +1173,7 @@ position = Vector2(2946, 1364)
 
 [node name="Level_UI" parent="." unique_id=167183391 node_paths=PackedStringArray("player") instance=ExtResource("2_12fag")]
 player = NodePath("../MainCharacter")
-required_coins = 15
-required_zombies = 15
+required_coins = 14
+required_zombies = 14
 current_level_number = 2
+next_level_path = "uid://dvqv8qmbxyapk"

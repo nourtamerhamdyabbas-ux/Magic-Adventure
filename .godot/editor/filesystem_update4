@@ -1,3 +1,6 @@
 res://Scenes/level_1.tscn
 res://Scenes/level_2.tscn
 res://Scripts/levels.gd
+res://Scenes/levels.tscn
+res://Scenes/level_3.tscn
+res://Scenes/main_character.tscn
