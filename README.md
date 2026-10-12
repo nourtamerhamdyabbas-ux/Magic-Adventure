@@ -6,16 +6,13 @@
 ## How To Run The Game?
 - To run the game you should open the itch.io link, then click the button "Run Game". So simple.
 ## How To Play The Game?
-- To play the game correctly, you should click the "PLAY" button in the main menu after running the game. Then select the one of the 3 levels.
-- The only way to complete the level is by defeating all the enemies with punch, and collecting all the coins.
-- All the attacks have same damage effect on the enemies.
-- You must prevent them from successfully attacking you, or you will lose.
-- Each of enemies in every level needs two successful attacks to kill them.
+- To play the game correctly, you should click the "START" button in the main menu after running the game. Then select the one of the 3 levels.
+- The only way to complete the level is by reaching the endpoint of each level. Also, it is optional to collect fruits, there is no required amount.
+- You must avoid the fire. And if it damaged you 4 times in the same level, you will die.
   
 ## Controllers
-- Movement is controlled using A and D or the ← and → arrow keys to move the character horizontally across the level and you can hold shift to run.
-- The player can jump using the spacebar or W button.
-- You can attack using the LMB or the E button for the attack.
+- Movement is controlled using A and D or the ← and → arrow keys to move the character horizontally across the level.
+- The player can jump using the spacebar or W button, you can also double click it if you want to double jump.
 - Using ESC for pause.
 
 ## AI Use 
