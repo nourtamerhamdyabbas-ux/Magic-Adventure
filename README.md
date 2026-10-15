@@ -5,6 +5,8 @@
 - The Game is finished now.
 ## How To Run The Game?
 - To run the game you should open the itch.io link, then click the button "Run Game". So simple.
+- This is the link: https://ali-yah1a.itch.io/magic-adventure
+- 
 ## How To Play The Game?
 - To play the game correctly, you should click the "PLAY" button in the main menu after running the game. Then select the one of the 3 levels.
 - The only way to complete the level is by defeating all the enemies with punch, and collecting all the coins.
