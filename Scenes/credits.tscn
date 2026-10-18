@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c8o38g8f5mmr1"]
 
+[ext_resource type="Script" uid="uid://bbec08qw3m48x" path="res://Scenes/credits.gd" id="1_1bamb"]
 [ext_resource type="Shader" uid="uid://dh8mb4x2ypugm" path="res://Scenes/credits.gdshader" id="1_gryuy"]
 [ext_resource type="Texture2D" uid="uid://c6jacvpvnfwla" path="res://Assets/UI/360_F_919771631_r73Mn9CkMRMiLLTnvJqRIGblb5TNXdMi.jpg" id="2_ccovl"]
 [ext_resource type="FontFile" uid="uid://cu1l0pr11ejgu" path="res://Assets/UI/Pixel Game.otf" id="3_ccovl"]
@@ -17,6 +18,45 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ehe0"]
+bg_color = Color(0.13, 0.12765999, 0.11829999, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n45e2"]
+bg_color = Color(0.34, 0.33388, 0.3094, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 6
+shadow_offset = Vector2(6, 6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opfnp"]
+bg_color = Color(0.21, 0.21, 0.19109999, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 5
+shadow_offset = Vector2(5, 5)
+
 [node name="CREDITS" type="Control" unique_id=425984480]
 layout_mode = 3
 anchors_preset = 15
@@ -24,6 +64,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_1bamb")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1067971660]
 texture_filter = 1
@@ -158,3 +199,20 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_oamur")
 text = "CREDITS"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1199514736]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 732.0
+offset_right = 1213.0
+offset_bottom = 879.0
+theme_override_colors/font_pressed_color = Color(0.03, 0.03, 0.03, 1)
+theme_override_colors/font_hover_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_fonts/font = ExtResource("3_ccovl")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_opfnp")
+text = "BACK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
